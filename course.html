@@ -1,0 +1,33 @@
+<!-- Course Information and Survey Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing and DevOps Course</title>
+</head>
+<body>
+    <h1>Cloud Computing and DevOps Course</h1>
+    <p>This course covers various aspects of cloud computing and DevOps practices. It includes topics such as:</p>
+    <ul>
+        <li>Introduction to Cloud Computing</li>
+        <li>DevOps Principles and Practices</li>
+        <li>Continuous Integration and Continuous Deployment (CI/CD)</li>
+        <li>Cloud Service Providers (e.g., Azure, AWS, GCP)</li>
+        <!-- Add more topics as needed -->
+    </ul>
+
+    <!-- Survey Form -->
+    <h2>Course Survey</h2>
+    <form action="/api/sendEmail" method="post">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        <br>
+        <label for="feedback">Please provide your feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        <br>
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
